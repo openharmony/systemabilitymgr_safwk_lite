@@ -17,11 +17,27 @@
         "adapted_system_type": [
             "small"
         ],
+        "adapted_kernel": [
+            "liteos_a",
+            "linux"
+        ],
         "rom": "",
         "ram": "",
         "deps": {
-            "components": [],
-            "third_party": []
+            "components": [
+                "utils_base",
+                "aafwk_lite",
+                "appexecfwk_lite",
+                "hilog",
+                "permission",
+                "dmsfwk_lite",
+                "samgr_lite",
+                "powermgr_lite"
+            ],
+            "third_party": [
+                "bounds_checking_function",
+                "cjson"
+            ]
         },
         "build": {
             "sub_component": [
