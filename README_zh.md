@@ -53,7 +53,7 @@ deps = [
   "//base/hiviewdfx/hilog_lite/frameworks/featured:hilog_shared",
   "//base/security/permission/services/permission_lite/ipc_auth:ipc_auth_target",
   "//base/security/permission/services/permission_lite/pms:pms_target",
-  "//foundation/distributedschedule/dmsfwk_lite:dtbschedmgr",
+  "//foundation/ability/dmsfwk_lite:dtbschedmgr",
   "//foundation/distributedschedule/samgr_lite/samgr_server:server",
 ]
 ```
