@@ -31,7 +31,7 @@ if (ohos_kernel_type == "liteos_a" || ohos_kernel_type == "linux") {
 
     include_dirs = [
       "//utils/native/lite/include",
-      "//foundation/distributedschedule/samgr_lite/interfaces/kits/samgr",
+      "//foundation/systemabilitymgr/samgr_lite/interfaces/kits/samgr",
     ]
 
     ldflags = [
@@ -47,7 +47,7 @@ if (ohos_kernel_type == "liteos_a" || ohos_kernel_type == "linux") {
       "//base/powermgr/powermgr_lite:powermgr_lite",
       "//base/security/permission_lite/services/ipc_auth:ipc_auth_target",
       "//base/security/permission_lite/services/pms:pms_target",
-      "//foundation/distributedschedule/samgr_lite/samgr_server:server",
+      "//foundation/systemabilitymgr/samgr_lite/samgr_server:server",
     ]
     if (enable_timertask == true) {
       deps += [ "//base/update/dupdate/services/timertask_lite:timertask" ]
