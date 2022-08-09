@@ -54,7 +54,7 @@ deps = [
   "//base/security/permission_lite/services/ipc_auth:ipc_auth_target",
   "//base/security/permission_lite/services/pms:pms_target",
   "//foundation/ability/dmsfwk_lite:dtbschedmgr",
-  "//foundation/distributedschedule/samgr_lite/samgr_server:server",
+  "//foundation/systemabilitymgr/samgr_lite/samgr_server:server",
 ]
 ```
 
@@ -62,5 +62,5 @@ deps = [
 
 [Distributed Scheduler subsystem](en-us_topic_0000001115719369.md)
 
-**[safwk\_lite](https://gitee.com/openharmony/distributedschedule_services_safwk_lite)**
+**[safwk\_lite](https://gitee.com/openharmony/systemabilitymgr_services_safwk_lite)**
 
