@@ -62,5 +62,12 @@ deps = [
 
 系统服务管理子系统
 
-[safwk\_lite](https://gitee.com/openharmony/systemabilitymgr_safwk_lite)
+[systemabilitymgr\_samgr\_lite](https://gitee.com/openharmony/systemabilitymgr_samgr_lite)
+
+[systemabilitymgr\_samgr](https://gitee.com/openharmony/systemabilitymgr_samgr)
+
+[systemabilitymgr\_safwk](https://gitee.com/openharmony/systemabilitymgr_safwk)
+
+[**systemabilitymgr\_safwk\_lite**](https://gitee.com/openharmony/systemabilitymgr_safwk_lite)
+
 
