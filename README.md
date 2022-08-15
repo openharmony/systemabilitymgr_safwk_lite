@@ -60,7 +60,13 @@ deps = [
 
 ## Repositories Involved<a name="section176111311166"></a>
 
-[Distributed Scheduler subsystem](en-us_topic_0000001115719369.md)
+System Ability Management Subsystem
 
-**[safwk\_lite](https://gitee.com/openharmony/systemabilitymgr_safwk_lite)**
+[systemabilitymgr\_samgr\_lite](https://gitee.com/openharmony/systemabilitymgr_samgr_lite)
+
+[systemabilitymgr\_samgr](https://gitee.com/openharmony/systemabilitymgr_samgr)
+
+[systemabilitymgr\_safwk](https://gitee.com/openharmony/systemabilitymgr_safwk)
+
+[**systemabilitymgr\_safwk\_lite**](https://gitee.com/openharmony/systemabilitymgr_safwk_lite)
 
