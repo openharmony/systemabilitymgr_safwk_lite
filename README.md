@@ -62,5 +62,5 @@ deps = [
 
 [Distributed Scheduler subsystem](en-us_topic_0000001115719369.md)
 
-**[safwk\_lite](https://gitee.com/openharmony/systemabilitymgr_services_safwk_lite)**
+**[safwk\_lite](https://gitee.com/openharmony/systemabilitymgr_safwk_lite)**
 
