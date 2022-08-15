@@ -11,7 +11,7 @@ safwklite模块负责提供基础服务运行的空进程。
 
 ## 目录<a name="section1464106163817"></a>
 
-分布式任务调度源代码目录结构如下表所示：
+系统服务管理源代码目录结构如下表所示：
 
 **表1 **主要源代码目录结构
 
@@ -30,7 +30,7 @@ safwklite模块负责提供基础服务运行的空进程。
 </tbody>
 </table>
 
-其中分布式任务调度safwk\_lite组件的源代码目录结构如下：
+其中系统服务管理safwk\_lite组件的源代码目录结构如下：
 
 ```
 ├── BUILD.gn
@@ -60,7 +60,7 @@ deps = [
 
 ## 涉及仓<a name="section176111311166"></a>
 
-**[分布式任务调度子系统](zh-cn_topic_0000001115719369.md)**
+**[系统服务管理子系统](zh-cn_topic_0000001115719369.md)**
 
 [safwk\_lite](https://gitee.com/openharmony/systemabilitymgr_services_safwk_lite)
 
