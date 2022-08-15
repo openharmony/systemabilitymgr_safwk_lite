@@ -60,7 +60,7 @@ deps = [
 
 ## 涉及仓<a name="section176111311166"></a>
 
-**[系统服务管理子系统](zh-cn_topic_0000001115719369.md)**
+系统服务管理子系统
 
-[safwk\_lite](https://gitee.com/openharmony/systemabilitymgr_services_safwk_lite)
+[safwk\_lite](https://gitee.com/openharmony/systemabilitymgr_safwk_lite)
 
