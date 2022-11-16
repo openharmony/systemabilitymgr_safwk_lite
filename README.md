@@ -1,36 +1,34 @@
-# safwk\_lite<a name="EN-US_TOPIC_0000001081445008"></a>
+# safwk_lite
 
--   [Introduction](#section11660541593)
--   [Directory Structure](#section1464106163817)
--   [Usage](#section10729231131110)
--   [Repositories Involved](#section176111311166)
+## Introduction
 
-## Introduction<a name="section11660541593"></a>
+The Lite System Ability Framework (safwk_lite) component provides an empty process for running basic services.
 
-The  **safwk\_lite**  module provides an empty process for running basic services.
+## System Architecture
 
-## Directory Structure<a name="section1464106163817"></a>
+Figure 1 Service-oriented architecture
 
-The following table describes the directory structure of the Distributed Scheduler.
 
-**Table 1**  Directory structure of the major source code
+![](figures/en-us_image_0000001128146921.png)
 
-<a name="table43531856201716"></a>
-<table><thead align="left"><tr id="row20416556201718"><th class="cellrowborder" valign="top" width="50%" id="mcps1.1.3.1.1"><p id="p10416456121716"><a name="p10416456121716"></a><a name="p10416456121716"></a>Directory</p>
-</th>
-<th class="cellrowborder" valign="top" width="50%" id="mcps1.1.3.1.2"><p id="p1841645631717"><a name="p1841645631717"></a><a name="p1841645631717"></a>Description</p>
-</th>
-</tr>
-</thead>
-<tbody><tr id="row104169564177"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.1.3.1.1 "><p id="p17416125614179"><a name="p17416125614179"></a><a name="p17416125614179"></a>safwk_lite</p>
-</td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.1.3.1.2 "><p id="p04163569170"><a name="p04163569170"></a><a name="p04163569170"></a>Implementation of the foundation process</p>
-</td>
-</tr>
-</tbody>
-</table>
+-   Provider: a service provider that provides capabilities (external APIs) for the system.
+-   Consumer: a service consumer that invokes the features (external APIs) provided by the service.
+-   Samgr: an agency that manages capabilities provided by providers and helps consumers discover providers' capabilities.
 
-The source code directory structure of the  **safwk\_lite**  module is as follows:
+
+## Directory Structure
+
+The following table describes the directory structure of the safwk_lite source code.
+
+**Table 1** Directory structure of the major source code
+
+| Name                                                        | Description                                  |
+| ------------------------------------------------------------ | -------------------------------------- |
+| safwk_lite                                                   | Implementation of the foundation process.                    |
+| bool Publish(sptr\<IRemoteObject> systemAbility);            | Publishes a system ability.                        |
+| virtual void DoStartSAProcess(const std::string& profilePath) = 0; | Enables a system ability based on its profile.|
+
+The source code directory structure of the safwk\_lite component is as follows:
 
 ```
 ├── BUILD.gn
@@ -40,11 +38,11 @@ The source code directory structure of the  **safwk\_lite**  module is as follow
     └── main.c
 ```
 
-## Usage<a name="section10729231131110"></a>
+## Usage
 
 Add a service to the foundation process.
 
-After writing the service based on the service template, add the dependencies to the  **BUILD.gn**  file.
+After writing the service information based on the service template, add the dependencies to the **BUILD.gn** file.
 
 ```
 deps = [
@@ -58,9 +56,9 @@ deps = [
 ]
 ```
 
-## Repositories Involved<a name="section176111311166"></a>
+## Repositories Involved
 
-System Ability Management Subsystem
+Samgr
 
 [systemabilitymgr\_samgr\_lite](https://gitee.com/openharmony/systemabilitymgr_samgr_lite)
 
@@ -69,4 +67,3 @@ System Ability Management Subsystem
 [systemabilitymgr\_safwk](https://gitee.com/openharmony/systemabilitymgr_safwk)
 
 [**systemabilitymgr\_safwk\_lite**](https://gitee.com/openharmony/systemabilitymgr_safwk_lite)
-
