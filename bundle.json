@@ -21,8 +21,8 @@
             "liteos_a",
             "linux"
         ],
-        "rom": "",
-        "ram": "",
+        "rom": "100KB",
+        "ram": "2048KB",
         "deps": {
             "components": [
                 "utils_base",
