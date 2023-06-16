@@ -1,5 +1,5 @@
 {
-    "name": "@ohos/systemabilitymgr_safwk_lite",
+    "name": "@ohos/safwk_lite",
     "description": "system ability framework",
     "homePage": "https://gitee.com/openharmony",
     "version": "3.1",
@@ -25,14 +25,12 @@
         "ram": "2048KB",
         "deps": {
             "components": [
-                "utils_base",
-                "bundle_framework_lite",
                 "ability_lite",
-                "hilog",
-                "permission",
+                "bundle_framework_lite",
                 "dmsfwk_lite",
-                "samgr_lite",
-                "powermgr_lite"
+                "hilog",
+                "powermgr_lite",
+                "samgr_lite"
             ],
             "third_party": [
                 "bounds_checking_function",
