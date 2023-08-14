@@ -26,9 +26,11 @@
         "deps": {
             "components": [
                 "ability_lite",
+                "battery_lite",
                 "bundle_framework_lite",
                 "dmsfwk_lite",
-                "hilog",
+                "hilog_lite",
+                "permission_lite",
                 "powermgr_lite",
                 "samgr_lite"
             ],
