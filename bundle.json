@@ -21,6 +21,11 @@
             "liteos_a",
             "linux"
         ],
+        "features": [
+            "safwk_lite_feature_enable_abilityms ",
+            "safwk_lite_feature_enable_bundlems ",
+            "safwk_lite_feature_enable_dtbschedmgr "
+        ],
         "rom": "100KB",
         "ram": "2048KB",
         "deps": {

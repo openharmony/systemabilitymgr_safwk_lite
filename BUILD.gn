@@ -15,6 +15,9 @@ import("//build/lite/config/component/lite_component.gni")
 
 declare_args() {
   enable_timertask = false
+  safwk_lite_feature_enable_abilityms = false
+  safwk_lite_feature_enable_bundlems = false
+  safwk_lite_feature_enable_dtbschedmgr = false
 }
 
 if (ohos_kernel_type == "liteos_a" || ohos_kernel_type == "linux") {
@@ -40,8 +43,6 @@ if (ohos_kernel_type == "liteos_a" || ohos_kernel_type == "linux") {
     ]
 
     deps = [
-      "${aafwk_lite_path}/services/abilitymgr_lite:abilityms",
-      "${appexecfwk_lite_path}/services/bundlemgr_lite:bundlems",
       "//base/hiviewdfx/hilog_lite/frameworks/featured:hilog_shared",
       "//base/security/permission_lite/services/ipc_auth:ipc_auth_target",
       "//base/security/permission_lite/services/pms:pms_target",
@@ -50,8 +51,16 @@ if (ohos_kernel_type == "liteos_a" || ohos_kernel_type == "linux") {
     if (enable_timertask == true) {
       deps += [ "//base/update/dupdate/services/timertask_lite:timertask" ]
     }
+    if (safwk_lite_feature_enable_abilityms == true) {
+      deps += [ "${aafwk_lite_path}/services/abilitymgr_lite:abilityms" ]
+    }
+    if (safwk_lite_feature_enable_bundlems == true) {
+      deps += [ "${appexecfwk_lite_path}/services/bundlemgr_lite:bundlems" ]
+    }
     if (board_name != "hispark_aries") {
-      deps += [ "//foundation/ability/dmsfwk_lite:dtbschedmgr" ]
+      if (safwk_lite_feature_enable_dtbschedmgr == true) {
+        deps += [ "//foundation/ability/dmsfwk_lite:dtbschedmgr" ]
+      }
     }
   }
 }
